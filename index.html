@@ -6,19 +6,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Professional Portfolio | Senior Business Intelligence Developer</title>
+<title>MD Furquan-Ul Haque | Power BI Data Analyst</title>
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500;400&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
 rel="stylesheet">
 
 <style>
-
-/* =====================
-BASE
-===================== */
 
 *{
 margin:0;
@@ -30,364 +26,253 @@ font-family:'Montserrat',sans-serif;
 :root{
 
 --primary:#6366f1;
---primary-dark:#4f46e5;
 --accent:#f59e0b;
-
 --text:#334155;
 --bg:#f8fafc;
 
 }
 
 body{
-
 background:var(--bg);
 color:var(--text);
 line-height:1.6;
-
 }
 
 .container{
-
 max-width:1200px;
 margin:auto;
 padding:0 20px;
-
 }
 
 section{
-
 padding:80px 0;
-
 }
 
 h1,h2,h3{
-
 margin-bottom:20px;
-
 }
 
-/* =====================
-HEADER
-===================== */
+/* HEADER */
 
 header{
-
 position:fixed;
 top:0;
 width:100%;
 background:white;
 box-shadow:0 2px 10px rgba(0,0,0,.05);
 z-index:1000;
-
 }
 
 nav{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 0;
-
 }
 
 .logo{
-
-font-weight:700;
 font-size:22px;
+font-weight:700;
 color:var(--primary);
-
 }
 
 .nav-links{
-
 display:flex;
 gap:25px;
 list-style:none;
-
 }
 
 .nav-links a{
-
 text-decoration:none;
 color:var(--text);
 font-weight:500;
-
 }
 
 .nav-links a:hover{
-
 color:var(--primary);
-
 }
 
-/* =====================
-HERO
-===================== */
+/* HERO */
 
 .hero{
-
 padding-top:150px;
 text-align:center;
 background:linear-gradient(135deg,#6366f1,#818cf8);
 color:white;
-
 }
 
 .hero img{
-
 width:220px;
 height:220px;
 border-radius:50%;
-margin-bottom:25px;
 object-fit:cover;
 border:6px solid rgba(255,255,255,.3);
-
+margin-bottom:25px;
 }
 
 .hero h1{
-
 font-size:40px;
-
 }
 
 .hero p{
-
 font-size:20px;
 margin-bottom:30px;
-
 }
 
 .btn{
-
 background:var(--accent);
 color:white;
 padding:12px 25px;
 border-radius:8px;
 text-decoration:none;
 font-weight:600;
-
 }
 
-/* =====================
-ABOUT
-===================== */
+/* ABOUT */
 
 .about{
-
 background:white;
-
 }
 
-/* =====================
-SKILLS
-===================== */
+/* SKILLS */
 
 .skills{
-
 background:#eef2ff;
-
 }
 
 .skills-container{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
 gap:25px;
-
 }
 
 .skill-card{
-
 background:white;
 padding:25px;
-text-align:center;
 border-radius:12px;
+text-align:center;
 box-shadow:0 5px 15px rgba(0,0,0,.05);
-
 }
 
 .skill-card i{
-
 font-size:35px;
 color:var(--primary);
 margin-bottom:10px;
-
 }
 
-/* =====================
-PROJECTS
-===================== */
+/* PROJECTS */
 
 .projects-grid{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
-
 }
 
 .project-card{
-
 background:white;
 padding:30px;
 border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,.05);
-
 }
 
 .project-card h3{
-
 color:var(--primary);
-
-}
-
-.project-card ul{
-
-margin-top:15px;
-
 }
 
 .project-btn{
-
-margin-top:20px;
 display:inline-block;
+margin-top:15px;
 background:var(--primary);
 color:white;
 padding:10px 20px;
 border-radius:8px;
 text-decoration:none;
-
 }
 
-/* =====================
-TIMELINE
-===================== */
-
-.timeline{
-
-max-width:800px;
-margin:auto;
-
-}
+/* EXPERIENCE */
 
 .timeline-item{
-
-margin-bottom:40px;
 background:white;
 padding:30px;
+margin-bottom:25px;
 border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,.05);
-
-}
-
-.timeline-item h3{
-
-color:var(--primary);
-
 }
 
 .date{
-
 color:var(--accent);
 font-weight:600;
-
 }
 
-/* =====================
-CERTIFICATIONS
-===================== */
+/* CERTIFICATIONS */
 
 .cert-container{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-
 }
 
 .cert-card{
-
 background:white;
 padding:30px;
 border-radius:12px;
 text-align:center;
 box-shadow:0 5px 15px rgba(0,0,0,.05);
-
 }
 
 .cert-card i{
-
 font-size:35px;
 color:var(--primary);
 margin-bottom:10px;
-
 }
 
-/* =====================
-CONTACT
-===================== */
+/* CONTACT */
 
 .contact{
-
-background:white;
 text-align:center;
-
+background:white;
 }
 
 .contact-info{
-
 display:flex;
 justify-content:center;
 gap:40px;
 flex-wrap:wrap;
 margin-top:40px;
-
 }
 
 .contact-item{
-
 background:#f8fafc;
 padding:30px;
 border-radius:12px;
 min-width:220px;
-
 }
 
 .contact-item i{
-
 font-size:28px;
 color:var(--primary);
 margin-bottom:10px;
-
 }
 
-/* =====================
-FOOTER
-===================== */
+/* FOOTER */
 
 footer{
-
 background:#0f172a;
 color:white;
 text-align:center;
 padding:40px 0;
-
 }
 
 .social-links{
-
 display:flex;
 justify-content:center;
 gap:20px;
 margin-bottom:20px;
-
 }
 
 .social-links a{
-
 color:white;
 font-size:22px;
-
 }
 
 </style>
@@ -395,8 +280,6 @@ font-size:22px;
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header>
 
@@ -430,11 +313,11 @@ font-size:22px;
 
 <div class="container">
 
-<img src="https://raw.githubusercontent.com/shahedshaikh/shahedshaikh/main/Shahid.png">
+<img src="https://via.placeholder.com/300" alt="MD Furquan-Ul Haque">
 
-<h1>Shahed Shaikh</h1>
+<h1>MD Furquan-Ul Haque</h1>
 
-<p>Senior Business Intelligence Developer</p>
+<p>Power BI Data Analyst | Business Intelligence Consultant</p>
 
 <a href="#contact" class="btn">Get In Touch</a>
 
@@ -452,22 +335,19 @@ font-size:22px;
 
 <p>
 
-Hello! I'm Shahed Shaikh, Microsoft Certified Data Analyst with over 3.6 years
-of experience across IT, Manufacturing, Insurance, Finance, and Healthcare domains.
+Hello! I'm MD Furquan-Ul Haque, a Power BI Data Analyst and Business Intelligence Consultant with over 6+ years of experience delivering end-to-end BI solutions across Mortgage, Healthcare, Retail, and Enterprise domains.
 
 </p>
 
 <p>
 
-My expertise lies in Power BI development, Microsoft Fabric, SQL Server,
-and enterprise Business Intelligence solutions.
+My expertise includes Power BI, DAX, SQL Server, Azure SQL, Snowflake, and enterprise dashboard development.
 
 </p>
 
 <p>
 
-I specialize in transforming raw data into actionable insights
-to help organizations make smarter data-driven decisions.
+I specialize in transforming complex data into clear insights that help organizations make smarter strategic decisions.
 
 </p>
 
@@ -489,8 +369,8 @@ to help organizations make smarter data-driven decisions.
 <div class="skill-card"><i class="fas fa-database"></i><h3>SQL</h3></div>
 <div class="skill-card"><i class="fas fa-code"></i><h3>DAX</h3></div>
 <div class="skill-card"><i class="fas fa-server"></i><h3>SQL Server</h3></div>
-<div class="skill-card"><i class="fas fa-cloud"></i><h3>Azure</h3></div>
-<div class="skill-card"><i class="fas fa-layer-group"></i><h3>Microsoft Fabric</h3></div>
+<div class="skill-card"><i class="fas fa-cloud"></i><h3>Azure SQL</h3></div>
+<div class="skill-card"><i class="fas fa-layer-group"></i><h3>Snowflake</h3></div>
 <div class="skill-card"><i class="fas fa-table"></i><h3>Excel</h3></div>
 <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3></div>
 
@@ -512,33 +392,43 @@ to help organizations make smarter data-driven decisions.
 
 <div class="project-card">
 
-<h3>E-Commerce Sales Dashboard</h3>
+<h3>Insurance Risk & Claims Analytics</h3>
 
 <ul>
 
-<li>YTD sales analysis</li>
-<li>Profit margin tracking</li>
-<li>Product performance insights</li>
+<li>Claims Ratio Analysis</li>
+<li>Fraud Detection</li>
+<li>Policy Sales Insights</li>
 
 </ul>
-
-<a href="#" class="project-btn">View Dashboard</a>
 
 </div>
 
 <div class="project-card">
 
-<h3>Employee Analytics</h3>
+<h3>Retail Business Analytics</h3>
 
 <ul>
 
-<li>Attrition insights</li>
-<li>Salary distribution</li>
-<li>Department analysis</li>
+<li>Sales Trend Analysis</li>
+<li>Inventory Optimization</li>
+<li>Customer Segmentation</li>
 
 </ul>
 
-<a href="#" class="project-btn">View Dashboard</a>
+</div>
+
+<div class="project-card">
+
+<h3>Mortgage Portfolio Analytics</h3>
+
+<ul>
+
+<li>Loan Delinquency Analysis</li>
+<li>Default Risk Segmentation</li>
+<li>Approval Ratio Insights</li>
+
+</ul>
 
 </div>
 
@@ -554,29 +444,25 @@ to help organizations make smarter data-driven decisions.
 
 <div class="container">
 
-<h2>Work Experience</h2>
-
-<div class="timeline">
+<h2>Experience</h2>
 
 <div class="timeline-item">
 
-<h3>Senior Business Intelligence Developer</h3>
+<h3>Power BI Consultant</h3>
 
-<span class="date">Apr 2025 – Present</span>
+<span class="date">June 2025 – Present</span>
 
-<p>Workfall India Pvt Ltd</p>
+<p>LTTS (Client Engagement), Vadodara</p>
 
 </div>
 
 <div class="timeline-item">
 
-<h3>Data Analyst</h3>
+<h3>Freelance Power BI Data Analyst</h3>
 
-<span class="date">Sep 2022 – Apr 2025</span>
+<span class="date">Aug 2019 – Apr 2025</span>
 
-<p>Vatsa Solutions Pvt Ltd</p>
-
-</div>
+<p>Business Intelligence Consultant</p>
 
 </div>
 
@@ -598,19 +484,9 @@ to help organizations make smarter data-driven decisions.
 
 <i class="fas fa-chart-line"></i>
 
-<h3>PL-300</h3>
+<h3>Power BI Advanced DAX</h3>
 
-<p>Microsoft Power BI Data Analyst</p>
-
-</div>
-
-<div class="cert-card">
-
-<i class="fas fa-database"></i>
-
-<h3>DP-600</h3>
-
-<p>Microsoft Fabric Analytics Engineer</p>
+<p>Udemy Certification</p>
 
 </div>
 
@@ -634,7 +510,7 @@ to help organizations make smarter data-driven decisions.
 
 <i class="fas fa-envelope"></i>
 
-<p>shaikhshahid217@gmail.com</p>
+<p>furquanh91@gmail.com</p>
 
 </div>
 
@@ -650,7 +526,7 @@ to help organizations make smarter data-driven decisions.
 
 <i class="fas fa-map-marker-alt"></i>
 
-<p>Pune, India</p>
+<p>India</p>
 
 </div>
 
@@ -660,21 +536,19 @@ to help organizations make smarter data-driven decisions.
 
 </section>
 
-<!-- FOOTER -->
-
 <footer>
 
 <div class="social-links">
 
 <a href="#"><i class="fab fa-linkedin"></i></a>
 <a href="#"><i class="fab fa-github"></i></a>
-<a href="#"><i class="fab fa-microsoft"></i></a>
 
 </div>
 
-<p>© 2026 Shahed Shaikh</p>
+<p>© 2026 MD Furquan-Ul Haque</p>
 
 </footer>
 
 </body>
+
 </html>
